@@ -12,7 +12,6 @@ import com.dicoding.tourismapp.core.domain.repository.ITourismRepository
 import com.dicoding.tourismapp.core.domain.useCase.TourismInteractor
 import com.dicoding.tourismapp.core.domain.useCase.TourismUseCase
 import com.dicoding.tourismapp.core.utils.AppExecutors
-import com.dicoding.tourismapp.core.utils.JsonHelper
 
 object Injection {
     fun provideTourismUseCase(context: Context) : TourismUseCase {
