@@ -22,7 +22,7 @@ abstract class NetworkBoundResource<ResultType, RequestType>(private val mExecut
                 }
                 is ApiResponse.Error -> {
                     onFetchFailed()
-                    emit(Resource.Error(apiResponse.errorMessage))
+                    emit(Resource.Error<ResultType>(apiResponse.errorMessage))
                 }
             }
         } else {
